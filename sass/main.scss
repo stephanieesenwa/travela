@@ -1,17 +1,24 @@
- $color-light-green:#7ed56f;
+@import "base/base";
+
+
+$color-light-green:#7ed56f;
  $color-dark-green:#28b485;
-$color-medium-green:#55c57a;
-$color-white:#fff;
-$color-grey:#777
+ $color-medium-green:#55c57a;
+ $color-white:#fff;
+ $color-grey:#777;
+ $color-black:#000;
 
 
 
 
-* {
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 400;
@@ -114,11 +121,11 @@ body {
 }
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba($color-black, 0.2);
 }
 .btn:active {
     transform: translateY(-2px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba($color-black, 0.2);
 }
 .btn::after {
     content: "";
