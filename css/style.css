@@ -43,6 +43,11 @@ body {
   color: #777;
   padding: 30px; }
 
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -25vh; }
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -77,7 +82,8 @@ body {
 
 .btn-white {
   background-color: #fff;
-  color: #777; }
+  color: #777;
+  font-size: 15px; }
 
 .btn:hover::after {
   transform: scaleX(1.6) scaleY(1.6);
