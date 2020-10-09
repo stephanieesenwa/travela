@@ -1,0 +1,16 @@
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right,  $color-light-green, $color-dark-green );
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    
+
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.01);
+        transition:  .2s;
+    }
+}
