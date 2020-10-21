@@ -36,6 +36,15 @@
     font-size: $default-font-size;
     
 }
+.btn--green::after {
+    background-color:$color-medium-green;
+}
+.btn--green {
+    background-color:$color-medium-green;
+    color:$color-white;
+    font-size: $default-font-size;
+    
+}
 .btn:hover::after {
     transform: scaleX(1.6) scaleY(1.6);
     opacity: 0;

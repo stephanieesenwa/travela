@@ -2,10 +2,12 @@
       perspective: 150rem;
       -moz-perspective: 150rem;
       position: relative;
-      height: 50rem;
+      height: 52rem;
 
+
+      
       &_side {
-      height: 50rem;
+      height: 52rem;
       transition: all .8s ease;
       position: absolute;
       top: 0;
@@ -26,7 +28,17 @@
                   transform: rotateY(180deg);
 
                   &-1{
-                        background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark);
+                        background-image: linear-gradient(to right bottom, 
+                        $color-secondary-light,$color-secondary-dark);
+                  }
+
+                  &-2{
+                        background-image: linear-gradient(to right bottom, 
+                        $color-light-green,$color-dark-green);
+                  }
+                  &-3{
+                        background-image: linear-gradient(to right bottom, 
+                        $color-tetiary-light,$color-tetiary-dark);
                   }
             }
       }
@@ -49,7 +61,17 @@
 
 
             &--1{
-                  background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark), url(../img/nat-5.jpg);
+                  background-image: linear-gradient(to right bottom,
+                   $color-secondary-light,$color-secondary-dark), url(../img/nat-5.jpg);
+            }
+            &--2{
+                  background-image: linear-gradient(to right bottom,
+                  $color-light-green,$color-dark-green), url(../img/nat-6.jpg);
+                  
+            }
+            &--3{
+                  background-image: linear-gradient(to right bottom,
+                   $color-tetiary-light,$color-tetiary-dark), url(../img/nat-7.jpg);
             }
             
       }
@@ -63,5 +85,80 @@
             text-align: right;
             top: 12rem;
             right: 2rem;
+            width: 75%;
+      }
+
+      &_heading-span{
+            padding: 1rem 1.5rem;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+            &--1{
+                  background-image: linear-gradient(to right bottom, 
+                  rgba($color-secondary-light,.85), 
+                  rgba($color-secondary-dark,.85));
+            }
+            &--2{
+                  background-image: linear-gradient(to right bottom, 
+                  rgba($color-light-green,.85), 
+                  rgba($color-dark-green,.85 ));  
+             }
+
+            &--3{
+                  background-image: linear-gradient(to right bottom, 
+                  rgba($color-tetiary-light,.85), 
+                  rgba($color-tetiary-dark,.85));
+            }
+
+           
+      }
+
+      &_details{
+            padding: 3rem;
+
+            ul{
+                  list-style: none;
+                  width: 80%;
+                  margin: 0 auto;
+
+                  li{
+                        text-align: center;
+                        font-size: 1.5rem;
+                        padding: 1rem;
+                        font-weight: 500;
+
+                        &:not(:last-child){
+                              border-bottom: 1px solid $color-grey-light-2;
+                        }
+                  }
+            }
+      }
+
+      //back-side styling
+
+      &_cta{
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             width: 90%; 
+             text-align: center;
+      }
+
+
+      &_price-box{
+            text-align: center;
+            color: $color-white;
+            margin-bottom: 8rem;
+            
+      }
+
+      &_price-only{
+            font-size: 1.4rem;
+            text-transform: uppercase;
+      }
+
+      &_price-value{
+            font-size: 6rem;
+            font-weight: 100;
       }
 }
