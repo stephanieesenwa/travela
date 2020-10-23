@@ -9,6 +9,23 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation_checkbox" id="navi-toogle">
+        <label for="navi-toogle"  class="navigation_button ">
+            MENU
+        </label>
+        <div class="navigation-background">&nbsp;</div>
+        <nav class="navigation-nav">
+            <ul class="navigation-list">
+                <li class="navigation-item"><a href="#" class="navigation-link">About natours</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link">Your benefits</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link">Popular tours</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link">Stories</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link">Book now</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <div class="logo-box">
             <img src="img/logo-white.png" alt="logo" class="logo">
@@ -243,6 +260,13 @@
         </section>
         
         <section class="section-stories">
+            <div class="bg-video">
+                <video class="bg-video_content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                        Your browser is not supported
+                </video>
+            </div>
             <div class="u-center-text u-margin-bottom-8">
                 <h2 class="heading-secondary">
                     WE MAKE PEOPLE GENUINELY HAPPY
@@ -252,7 +276,8 @@
              <div class="row">
                  <div class="story">
                      <figure class="story_shape">
-
+                        <img src="img/nat-8.jpg" alt="Mary Smith" class="story_img">
+                        <figcaption class="story_caption">Mary Smith</figcaption>
                      </figure>
 
                      <div class="story_text">
@@ -260,12 +285,86 @@
                              I had the best week ever with my family
                          </h3>
                          <p>
-                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tenetur sit adipisci facilis distinctio, aliquid debitis ipsum nam accusamus, possimus, fuga iure nisi totam praesentium doloremque numquam dignissimos? Minus, dolorem?
+                             Lorem ipsum dolor sit amet sit adipisci aliquid debitis ipsum nam accusamus, possimus, numquam dignissimos?  consectetur adipisicing elit. Ad tenetur sit adipisci facilis distinctio, aliquid debitis ipsum nam accusamus, possimus, fuga iure nisi totam praesentium doloremque numquam dignissimos? Minus, dolorem?
                          </p>
                      </div>
                  </div>
              </div>
+                 <div class="row">
+                    <div class="story">
+                        <figure class="story_shape">
+                           <img src="img/nat-9.jpg" alt="Mary Smith" class="story_img">
+                           <figcaption class="story_caption">Jack Wilson</figcaption>
+                        </figure>
+   
+                        <div class="story_text">
+                            <h3 class="heading-tetiary u-margin-bottom-2">
+                               Wow! My life is completely different now
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet sit adipisci aliquid debitis ipsum nam accusamus, possimus, numquam dignissimos?  consectetur adipisicing elit. Ad tenetur sit adipisci facilis distinctio, aliquid debitis ipsum nam accusamus, possimus, fuga iure nisi totam praesentium doloremque numquam dignissimos? Minus, dolorem?
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="u-center-text u-margin-top-10 ">
+                        <a href="#" class="btn-text">Read all stories &rarr;</a>
+                     </div>
+            
         </section>
+
+        <section class="section-book">
+            <div class="row">
+                <div class="book">
+                  
+                    <div class="book_form">
+                        <form action="#" class="form"> 
+                             <div class=" u-margin-bottom-4">
+                                <h2 class="heading-secondary">
+                                        Start booking now
+                                </h2>
+                             </div>
+            
+                            <div class="form_group">
+                                <input type="text" class="form_input" placeholder="Full name" required id="name1">
+                                <label for="name1" class="form_label">Full name</label>
+                            </div>
+
+                            <div class="form_group">
+                                <input type="email" class="form_input" placeholder="Email address" required id="email1">
+                                <label for="email1" class="form_label">Email address</label>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_radio-group">
+                                    <input type="radio" class="form_radio-input" id="small" name="size">
+                                    <label for="small" class="form_radio-label">
+                                        <span class="form_radio-button"></span>
+                                        Small tour group
+                                    </label>
+                                </div>
+
+                                <div class="form_radio-group">
+                                    <input type="radio" class="form_radio-input" id="large" name="size">
+                                    <label for="large" class="form_radio-label">
+                                        <span class="form_radio-button"></span>
+                                        Large tour group
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form_group u-margin-top-4">
+                                
+                                    <button class="btn btn--green">Next step &rarr;</button>
+                                 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- <section class="grid-test">
             <div class="grid-heading">Grid system</div>
     
@@ -342,6 +441,34 @@
             </div>
         </section> -->
     </main>
+
+    <footer class="footer">
+        <div class="footer_logo-box">
+            <img src="img/logo-green-2x.png" alt="full logo" class="footer_logo">
+        </div>
+        
+        <div class="row ">
+            <div class="col-1-of-2">
+                <div class="footer_navigation">
+                    <ul class="footer_list">
+                        <li class="footer_item"><a href="#" class="footer_link">Company</a></li>
+                        <li class="footer_item"><a href="#" class="footer_link">Contact us</a></li>
+                        <li class="footer_item"><a href="#" class="footer_link">Carrers</a></li>
+                        <li class="footer_item"><a href="#" class="footer_link">Privacy policy</a></li>
+                        <li class="footer_item"><a href="#" class="footer_link">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer_copyright">
+                    Built by <a href="#" class="footer_link">Esenwa Stephanie</a>for his online course  <a href="#" class="footer_link">Avanced css and sass</a>
+                    . Copyright &copy; by Esenwa Stephanie You are 100% allowed to use this webpage for both personal 
+                    and commercial use, but NOT to claim it as your own design. A credit to the original author, Esenwa Stephanie
+                    , is of course highly appreciated!
+                </p>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>

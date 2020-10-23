@@ -1,17 +1,27 @@
-.btn:link,
-.btn:visited {
+.btn{
+&,
+&:link,
+&:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 40px;
     display: inline-block;
     border-radius: 100px;
     position: relative;
+
+    //change the <button> element
+    border: none;
+    cursor: pointer;
 }
-.btn:hover {
+}
+
+.btn:hover{
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba($color-black, 0.2);
 }
-.btn:active {
+.btn:active ,
+.btn:focus{ 
+    outline: none;
     transform: translateY(-2px);
     box-shadow: 0 5px 10px rgba($color-black, 0.2);
 }
